@@ -1,0 +1,231 @@
+main {
+  background-color: #282e36;
+  &.main {
+    transition: padding 0.5s;
+    &.sidebar-open {
+      padding-left: 290px !important;
+    }
+    &.sidebar-close {
+      padding-left: 90px !important;
+    }
+  }
+  .title_main {
+    margin-top: 3rem;
+    h4 {
+      font-size: 18px;
+      margin: 0;
+      line-height: 75px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #fff;
+    }
+  }
+  .box_items {
+    padding: 25px 5px;
+    background-color: #464f5b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .box_icon {
+      i {
+        cursor: pointer;
+        font-size: 7rem;
+        line-height: 6rem;
+        height: 112px;
+      }
+      &:hover {
+        color: #939393;
+        transform: scale(0.9);
+        transition: 0.3s;
+      }
+    }
+    .box_text {
+      p {
+        font-size: 14px;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        display: block;
+        transition: ease 0.2s;
+        font-weight: 700;
+      }
+    }
+  }
+  .tab_content{
+h3{
+    font-size: 18px;
+    margin: 0;
+    line-height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #3a444e;
+    td,
+    th {
+      border: 1px solid #464f5b;
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .active  {
+      width: 70px;
+      height: 32px;
+      background: #fa5c7c;
+      border-radius: 6px;
+      margin: auto;
+      p{
+          padding: 5px 10px;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.1px;
+          color: #415471;
+      }
+    }
+    .head_txt {
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #aab8c5;
+        cursor: pointer;
+        height: 50px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          margin: 0px 10px;
+        }
+      }
+    }
+    .table_text {
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #aab8c5;
+      }
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+      }
+    }
+    .time  {
+      p{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #aab8c5;
+    }
+    }
+  }
+}
+$light: #fff;
+$base: #05103b;
+$accent: #ff3838;
+
+.donut-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    circle {
+      transition: stroke-width 0.3s;
+
+      &:hover {
+        stroke-width: 22;
+      }
+    }
+  }
+
+  .items-names {
+    max-width: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+
+    list-style: none;
+
+    .item-name {
+      min-width: 70px;
+
+      margin-right: 10px;
+      margin-bottom: 5px;
+
+      padding-left: 25px;
+
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+
+//////////////////////////////////
+body {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 70px;
+
+  font-family: "Montserrat", sans-serif;
+
+  color: $base;
+  background: $base;
+
+  .card {
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    background: $light;
+
+    h1 {
+      margin-top: 10px;
+    }
+  }
+}
+
+.fa-instagram {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+
+  color: $light;
+  font-size: 38px;
+
+  cursor: pointer;
+
+  transition: all 0.1s;
+  &:hover {
+    color: $accent;
+    font-size: 42px;
+  }
+}
+
+}
