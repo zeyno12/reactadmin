@@ -1,7 +1,4 @@
 import React from "react";
-import az from "..//image/az.jpg";
-import user from "..//image/avatar_ofis.jpg";
-
 const Navbar = ({openSidebar,setOpenSidebar}) => {
     const handleClick = (e) => {
         setOpenSidebar(!openSidebar)
@@ -17,39 +14,24 @@ const Navbar = ({openSidebar,setOpenSidebar}) => {
                   <div className="list" onClick={handleClick}>
                     <i className="bi bi-list"></i>
                   </div>
-                  <div className="form_items">
-                    <form action="">
-                      <input type="text" placeholder="Axtarış" />
-                    </form>
-                    <button>Axtar</button>
-                    <div className="absolute_search">
-                      <i className="bi bi-search"></i>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div className="col-lg-6">
-             <div className="div_flex">
-             <div className="items2">
-                 <div className="group">
-                    <img src={az} alt="" />
-                    <span> Azərbaycan </span>
-                  </div>
-                <div className="icons_nav">
-                  <i className="bi bi-bell"></i>
-                  <i className="bi bi-gear-wide-connected"></i>
+
+               <div className="items2">
+               <div className="balance">
+                  <div><i class="bi bi-wallet"></i></div>
+                  <div><p>Balans <span className="price_gren">$1293</span></p></div> 
                 </div>
-                 </div>
-                <div className="different">
-                  <div className="img-dif">
-                    <img src={user} alt="" />
+                <div className="profile">
+                  <div className="img_user">
+                  <i className="bi bi-person-circle"></i>
                   </div>
-                  <div className="text-diff">
-                    <p>Fuad Məmmədov</p>
-                    <p>CEO</p>
+                  <div className="user_name">
+                    <p>Profile</p>
                   </div>
                 </div>
-             </div>
+               </div>
               </div>
             </div>
           </div>

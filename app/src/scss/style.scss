@@ -1,70 +1,20 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 @import "pages/main";
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background: #3a444e;
+  background: #5c2483;
   transition: padding 0.5s;
-  &.sidebar-open{
+  &.sidebar-open {
     padding-left: 290px !important;
   }
-  &.sidebar-close{
+  &.sidebar-close {
     padding-left: 90px !important;
   }
   nav {
-    // width: calc(100% - 290px);
-    .div_flex {
-      display: flex;
-      gap: 30px;
-      .items2 {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        .group {
-          img {
-            height: 12px;
-          }
-          span {
-            color: #cedce4;
-          }
-        }
-        .icons_nav {
-          i {
-            color: #f1f1f1;
-            cursor: pointer;
-            line-height: 70px;
-            font-size: 24px;
-            margin: 20px;
-            margin: 0px 10px;
-          }
-        }
-      }
-      .different {
-        padding: 12px;
-        width: 200px;
-        display: flex;
-        gap: 10px;
-        background-color: #464f5b;
-        .img-dif {
-          img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-          }
-        }
-        .text-diff {
-          p {
-            margin: 0;
-            font-size: 12px;
-            color: #aab8c5;
-          }
-        }
-      }
-    }
     .items1 {
       display: flex;
       gap: 10px;
@@ -78,38 +28,44 @@ header {
           margin: 20px;
         }
       }
-      .form_items {
+    }
+    .items2 {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      gap:20px;
+      align-items: center;
+      .balance {
         display: flex;
-        position: relative;
-        font-family: Nunito, sans-serif;
-        input {
-          border: none;
-          height: calc(1.5em + 0.9rem + 2px);
-          padding-left: 40px;
-          padding-right: 20px;
-          background-color: #464f5b;
-          box-shadow: none;
-          border-radius: 5px;
-          outline: none;
-        }
-        button {
-          border-radius: 5px;
-          color: #fff;
-          background-color: #727cf5;
-          border-color: #727cf5;
-          border: none;
-          outline: none;
-          padding: 0px 16px;
-          &:hover {
-            background-color: #8a94fa;
-            transition: 0.3s ease-in-out;
+        gap: 10px;
+        align-items: center;
+          p {
+            text-align: start;
+            font-weight: 500;
+            margin: 0;
+            font-size: 1.1rem;
+            .price_gren{
+            color: rgb(40, 255, 40);
+            }
           }
         }
-        .absolute_search {
-          position: absolute;
-          top: 7px;
-          left: 13px;
-          color: #8391a2;
+      .profile {
+
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .img_user {
+          i {
+            color: white;
+            font-size: 1.2rem;
+          }
+        }
+        .user_name {
+          p {
+            margin: 0;
+            font-weight: 500;
+            font-size: 1.1rem;
+          }
         }
       }
     }
@@ -122,33 +78,34 @@ header {
   padding: 0 16px;
   margin: 0 !important;
   display: block !important;
-  background: #3a444e;
+  background: #5c2483;
   transition: width 0.5s;
-  &.sidebar-open{
+  &.sidebar-open {
     width: 290px !important;
   }
-  &.sidebar-close{
-    width:90px !important;
-    span,p{
+  &.sidebar-close {
+    width: 90px !important;
+    span,
+    p {
       display: none !important;
+    }
+    i {
+      font-size: 1.4rem;
+      &:hover {
+        color: white;
+        transition: 0.3s;
       }
-      i{
-        font-size: 1.4rem;
-        &:hover{
-          color: white;
-          transition: 0.3s;
-          }
-      }
-      .slaam{
-    margin: 0px 10px;
-      }
+    }
+    .slaam {
+      margin: 0px 10px;
+    }
   }
   .mainlogo {
     padding: 0;
     margin: 12px 6px;
 
     img {
-      width: 60px;
+      width: 100px;
     }
   }
 
@@ -156,6 +113,8 @@ header {
     padding: 0;
     li {
       list-style: none;
+      color: white;
+      padding: 10px 0;
       p {
         letter-spacing: 0.05em;
         pointer-events: none;
@@ -165,25 +124,6 @@ header {
         color: #cedce4;
         font-weight: 700;
       }
-      i,
-      span {
-        color: #8391a2;
-        display: inline-block;
-        line-height: 1.0625rem;
-        margin: 10px 10px 10px 0;
-        font-size: 1.1rem;
-        vertical-align: middle;
-        text-align: start;
-      }
-      .new {
-        margin-top: 3px;
-        font-size: 10px;
-        color: #0acf97;
-        background-color: rgba(10, 207, 151, 0.18);
-        border-radius: 5px;
-        padding: 0px 6px;
-      }
     }
   }
 }
-

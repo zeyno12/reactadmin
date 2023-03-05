@@ -1,13 +1,15 @@
 import React from 'react';
-import Logo from "..//image/pashalogo.png";
-import Logosade from "..//image/pasha.png";
+import { Link } from 'react-router-dom';
+
 const Sidebar=({openSidebar})=>{
 return(
     <section className={`${openSidebar ? "sidebar sidebar-open" : "sidebar sidebar-close"}`}>
     <div className="container">
       <div className="row">
         <div className="mainlogo">
-          <img src={Logo}  alt="salam" className='logo' />
+        <Link to="/">
+        <img src="	https://www.azercell.com/theme/images/common/b-2-c-logo.svg"  alt="salam" className='logo' />
+        </Link>
           
         </div>
         <div className="col-auto min-vh-100 lg-dark slaam">
